@@ -1,0 +1,112 @@
+{% spaceless %}
+    <!DOCTYPE html>
+    <html lang="en">
+
+
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <meta name="author" content="PerfectNeeds"/>
+
+        <title>{% block title %}{% endblock %} | BAM</title>
+
+        <link href="{{ asset('fe/images/favicon.png') }}" rel="shortcut icon" type="image/png">
+        <link href="{{ asset('fe/images/apple-touch-icon.png') }}" rel="apple-touch-icon">
+        <link href="{{ asset('fe/images/apple-touch-icon-72x72.png') }}" rel="apple-touch-icon" sizes="72x72">
+        <link href="{{ asset('fe/images/apple-touch-icon-114x114.png') }}" rel="apple-touch-icon" sizes="114x114">
+        <link href="{{ asset('fe/images/apple-touch-icon-144x144.png') }}" rel="apple-touch-icon" sizes="144x144">
+
+        <link href="{{ asset('fe/css/style.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('fe/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('fe/css/font-awesome.css') }}" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" href="{{ asset('fe/css/main.css') }}">
+        <link rel="stylesheet" href="{{ asset('fe/css/jquery.bxslider.css') }}" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('fe/css/aos.css') }}">
+        <script src="{{ asset('fe/js/modernizr-2.6.2.min.js') }}"></script>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+
+    <body>
+
+    <!-- Loader -->
+
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section"></div>
+    </div>
+    <!-- Loader end -->
+    <!-- ========== HEADER ========== -->
+
+    <header>
+        <div class="container">
+            {% set cr = app.request.attributes.get('_route') %}
+
+            {% if cr in ['fe_work_show'] %}
+                <div class="nav pull-right">
+                    <a class="navbar-toggle open" href="{{ path('fe_work') }}" id="nav-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            {% else %}
+                <div class="logo pull-left">
+                    <a href="{{ path('fe_home') }}">
+                        <figure>
+                            <img src="{% if cr in ['fe_contact'] %}{{ asset('fe/images/logoDark.png') }}{% else %}{{ asset('fe/images/logo.png') }}{% endif %}" alt="logo">
+                        </figure>
+                    </a>
+                </div>
+                <div class="nav pull-right">
+                    <button class="navbar-toggle collapsed" id="nav-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                {{ include('fe/menu.html.twig') }}
+            {% endif %}
+        </div>
+    </header>
+    {#<!-- =========== MAIN ========== -->#}
+
+    {% block content %}{% endblock %}
+
+    {#<!-- ========== FOOTER ========== -->#}
+    {% if cr in ['fe_home'] ==false %}
+        <footer>
+            <div class="col-md-12 text-center">
+                <p>&copy; {{ "now"|date("Y") }} BAM Digital All rights reserved - <a href="http://www.perfectneeds.com" target="_blank">Developed
+                        By <span>PERFECTNEEDS</span></a></p>
+            </div>
+        </footer>
+    {% endif %}
+
+
+    {% block javascript %}
+
+        <script type="text/javascript" src="{{ asset('fe/js/jquery-2.2.0.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('fe/js/bootstrap.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('fe/js/aos.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('fe/js/app.js') }}"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                AOS.init({
+                    once: 'true'
+                });
+            });
+        </script>
+
+
+    {% endblock %}
+
+    </body>
+    </html>
+{% endspaceless %}

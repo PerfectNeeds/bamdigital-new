@@ -1,0 +1,57 @@
+{% extends 'adminTemplate/base.html.twig' %}
+{% import 'adminTemplate/macros.html.twig' as macros %}
+{% block breadcrumb %}
+    <div class="breadcrumb-line">
+        <ul class="breadcrumb">
+            <li><a href="{{ path('dashboard') }}"><i class="icon-home2 position-left"></i>Dashboard</a></li>
+            <li><a href="{{ path('dynamicpage_index') }}">Dynamic Page</a></li>
+            <li class="active">New dynamic page</li>
+        </ul>
+    </div>
+{% endblock %}
+{% block body %}
+    <div class="tabbable panel login-form width-400">
+        {{ render(controller('CMSBundle:Administration/Dashboard:tabs',{'type':1,'seoBaseRouteId':seoBaseRoute.id})) }}
+
+        <div class="tab-content panel-body">
+            <div class="tab-pane fade in active" id="basic-tab1">
+                {{ form_start(form, {'attr':{'class':'form-validate-jquery','novalidate':'novalidate'}}) }}
+                <div class="panel panel-flat">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">Create dynamic page</h5>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="row">
+                            {{ macros.input(form.title) }}
+                        </div>
+                        <div class="row">
+                            {{ macros.input(form.post.brief) }}
+                        </div>
+                        <div class="row">
+                            {{ macros.input(form.post.description,12,null,null,'form-control ckeditor') }}
+
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="heading-elements">
+                            <div class="heading-btn pull-right">
+                                <button type="reset" class="btn bg-orange-400">Reset</button>
+                                <button type="submit" class="btn bg-teal-400">Save changes <i
+                                            class="icon-checkmark4 position-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('admin/js/ckeditor/ckeditor.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin/js/plugins/forms/validation/validate.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin/js/pages/form_validation.js') }}"></script>
+{% endblock javascripts %}

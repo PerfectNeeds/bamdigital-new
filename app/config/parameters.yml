@@ -1,0 +1,12 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: bamdigital	
+    database_user: bamdigital_root
+    database_password: cIof82#4
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: no-reply@bamdigital.co
+    mailer_password: noreplybam
+    secret: ede5f603490b188dc45d50c78fa8032e3af94c0c

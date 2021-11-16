@@ -1,0 +1,430 @@
+{% extends 'fe/base.html.twig' %}
+{% set seo = workPage.seo %}
+{% use 'SeoBundle:FrontEnd:seo.html.twig' %}
+{% block stylesheet %}
+    {{ parent() }}
+
+{% endblock %}
+
+{% block content %}
+        <div class="detailsPage">
+            <div id="carousel-example-generic" class="carousel slide caption-animate" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="{{ asset('fe/images/projects/pastaweesy/banner.jpg') }}" alt="slide one">
+                        <div class="carousel-caption fadeInRight">
+                            <h1 class="black">Pastaweesy</h1>
+                            <h2 class="black">Digital Marketing – Food Styling & Photography,  <br/> Integrated Digital Campaigns - Social Media Content </h2>
+                            <p class="black">
+                                Pastaweesy is one of BAM’s oldest and dearest clients, it all started with the brand’s unmistakable icon; the Pastaweesy mustache! We launched the eatery into the world of Facebook 4 years ago and never looked back.
+                                We introduced the mustache into the hearts, minds and faces of an ever-growing and amused fan-base of followers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--        <section class="seperators first">
+            <div class="slide" data-aos="fade-up" data-aos-duration="2200">
+            </div>
+        </section>-->
+        <section class="seperators first">
+             <div class="slide" data-aos="fade-up" data-aos-duration="2200">
+                <img src="{{ asset('fe/images/projects/pastaweesy/slide.jpg') }}" alt="pastaweesy" class="img-responsive"/>
+            </div>
+
+            <div class="pagesData pt100">
+                <div class="container">
+                    <div class="col-md-12 col-sm-12 col-xs-12 aboutText text-center" data-aos="fade-up">
+                        <p>Mustache Mania was the campaign that truly established Pastaweesy’s local presence, keeping it relevant, humorous and - of course - iconic</p>
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                            <img src="{{ asset('fe/images/shape2.png') }}" alt="shape"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ourWorkDetails">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 col-xs-12">
+                        <div class="slide cover-photo" data-aos="fade-up" data-aos-duration="2200">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/1.jpg') }}" alt="pastaweesy" class="img-responsive"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-xs-12">
+                <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2300">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/img1.jpg') }}" alt="pastaweesy" class="post-shadow img-responsive"/>
+                            <h2>Selfi Elshnb :D :D #lovelypasta</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12" data-aos="fade-up" data-aos-duration="2400">
+                    <div class="side">
+                        <div class="image-center text-right">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/img2.jpg') }}" alt="pastaweesy" class="post-shadow img-responsive"/>
+                            <h2>ضحك ولعب و باستا وحب</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2500">
+                    <div class="side">
+                        <div class="image-center text-right">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/img3.jpg') }}" alt="pastaweesy" class="post-shadow img-responsive"/>
+                            <h2>باستاويسي وافتخر@pastaweesy</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12" data-aos="fade-up" data-aos-duration="2600">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/img4.jpg') }}" alt="pastaweesy" class="post-shadow img-responsive"/>
+                            <h2>#me#babe#time#out#pasta#yummy #pastaweesy#pastaweeesylovers</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2700">
+                    <div class="side">
+                        <div class="image-center" text-right>
+                            <img src="{{ asset('fe/images/projects/pastaweesy/img5.jpg') }}" alt="pastaweesy" class="post-shadow img-responsive"/>
+                            <h2>فعلناهااااااا يا رجااالة#مكرونة#حوواوشي
+                                #الصحابـالحلوة#pastaweesy</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12" data-aos="fade-up" data-aos-duration="2800">
+                    <div class="side">
+                        <div class="image-center text-right">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/img6.jpg') }}" alt="pastaweesy" class="post-shadow img-responsive"/>
+                            <h2>دلع كرشك :D حبيبي</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide" data-aos="fade-up" data-aos="fade-up" data-aos-duration="2200">
+                <img src="{{ asset('fe/images/projects/pastaweesy/banner2.jpg') }}" alt="pastaweesy"/>
+            </div>
+
+            <section class="pagesData seperators white">
+                <div class="container">
+                    <div class="col-md-12 col-sm-12 col-xs-12 aboutText text-center" data-aos="fade-up">
+                        <p>Creating a currency of entertainment. It was a race against local fears to make<br/>
+                            light of a difficult situation.</p>
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                            <img src="{{ asset('fe/images/shape2-black.png') }}" alt="shape"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container-fluied">
+                <video width="100%" controls id="video">
+                    <source src="{{ asset('fe/videos/pastaweesy.mp4') }}" type="video/mp4">
+                </video>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 col-xs-12">
+                        <div class="slide cover-photo" data-aos="fade-up" data-aos-duration="2200">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/2.jpg') }}" alt="pastaweesy" class="img-responsive"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-xs-12">
+                <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2300">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/img7.jpg') }}" alt="pastaweesy" class="post-shadow img-responsive"/>
+                            <h2>Pastaweesy has been sighted  leaving the currency exchange agency with a mysterious brief case</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12" data-aos="fade-up" data-aos-duration="2400">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/img8.jpg') }}" alt="pastaweesy" class="post-shadow  img-responsive"/>
+                            <h2>He opens up the brief case, and its full of freshly brewed  dollar bills.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="pagesData seperators white">
+                <div class="container">
+                    <div class="col-md-12 col-sm-12 col-xs-12 aboutText text-center" data-aos="fade-up">
+                        <p>We asked our customers to use their newly acquired currency and come up with the<br/>
+                            craziest picture ideas for a chance to win, and here is what they came up with.</p>
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                            <img src="{{ asset('fe/images/shape2-black.png') }}" alt="shape"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="col-md-12 col-xs-12">
+                <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2300">
+                    <div class="side">
+                        <div class="image-center text-right">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/img9.jpg') }}" alt="pastaweesy" class="post-shadow img-responsive"/>
+                            <h2>دي الناس اللي عملت حوار بالدولار يلا كمل
+                                الحوار وورينا  هتعمل انت ايه بالدولار</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12" data-aos="fade-up" data-aos-duration="2400">
+                    <div class="side">
+                        <div class="image-center text-right">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/img10.jpg') }}" alt="pastaweesy" class="post-shadow img-responsive"/>
+                            <h2>يا دولاراتك يا باستاويسي</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2300">
+                    <div class="side">
+                        <div class="image-center text-right">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/img11.jpg') }}" alt="pastaweesy" class="post-shadow img-responsive"/>
+                            <h2>عشان الاقي حل الإرتفاع الاسعار... عملت 
+                                ماكينة باستاويسي دولار ..لا سحر ولا شعوذة</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12" data-aos="fade-up" data-aos-duration="2400">
+                    <div class="side">
+                        <div class="image-center text-right">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/img12.jpg') }}" alt="pastaweesy" class="post-shadow img-responsive"/>
+                            <h2>فكرة جديدة وجامدة لحوار الدولار</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2300">
+                    <div class="side">
+                        <div class="image-center text-right">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/img13.jpg') }}" alt="pastaweesy" class="post-shadow img-responsive"/>
+                            <h2>الصورة دي جامدة اوي وشكلها كده هتكسب
+                                شاركونا الحوار وماتنسوش تطلبوا الدولار من
+                                اقرب فرع ليكوا</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12" data-aos="fade-up" data-aos-duration="2400">
+                    <div class="side">
+                        <div class="image-center text-right">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/img14.jpg') }}" alt="pastaweesy" class="post-shadow img-responsive"/>
+                            <h2>الهدايا غالية والاسعار نار </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2300">
+                    <div class="side">
+                        <div class="image-center text-right">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/img15.jpg') }}" alt="pastaweesy" class="post-shadow img-responsive"/>
+                            <h2>الصورة دي من الحوارات الجامدة اللي اتعملت
+                                بالدولار لسة المسابقة شغالة معانا، شاركونا
+                                حوار الدولار بتاعكوا عشان يجيلكوا فرصة
+                                تكسبوا معانا</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="pagesData seperators white">
+                <div class="container">
+                    <div class="col-md-12 col-sm-12 col-xs-12 aboutText text-center" data-aos="fade-up">
+                        <p>We built on a figure that encompassed all that Pastaweesy stands for, by actively  tapping into a local ravine of cultural references</p>
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                            <img src="{{ asset('fe/images/shape2-black.png') }}" alt="shape"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="slide" data-aos="fade-up" data-aos-duration="2200">
+                <img src="{{ asset('fe/images/projects/pastaweesy/slide5.jpg') }}" alt="pastaweesy"/>
+            </div>
+
+            <div class="slide" data-aos="fade-up" data-aos="fade-up" data-aos-duration="2200">
+                <img src="{{ asset('fe/images/projects/pastaweesy/slide4.jpg') }}" alt="pastaweesy"/>
+            </div>
+            <div class="slide mt25">
+                <ul class="bxslider">
+                    <li>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="side">
+                                <img src="{{ asset('fe/images/projects/pastaweesy/s1.jpg') }}" alt="Formula Onederful" class="post-shadow"/>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="side">
+                                <img src="{{ asset('fe/images/projects/pastaweesy/s2.jpg') }}" alt="Formula Onederful" class="post-shadow "/>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="side">
+                                <img src="{{ asset('fe/images/projects/pastaweesy/s3.jpg') }}" alt="Formula Onederful" class="post-shadow "/>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="side">
+                                <img src="{{ asset('fe/images/projects/pastaweesy/s4.jpg') }}" alt="Formula Onederful" class="post-shadow "/>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="side">
+                                <img src="{{ asset('fe/images/projects/pastaweesy/s5.jpg') }}" alt="Formula Onederful" class="post-shadow "/>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 col-xs-12">
+                        <div class="slide cover-photo" data-aos="fade-up" data-aos-duration="2200">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/3.jpg') }}" alt="pastaweesy" class="img-responsive"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-xs-12">
+                <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2300">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/img16.jpg') }}" alt="pastaweesy" class="post-shadow img-responsive"/>
+                            <h2>Suffering from the intense summer heat</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12" data-aos="fade-up" data-aos-duration="2400">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/img17.jpg') }}" alt="pastaweesy" class="post-shadow img-responsive"/>
+                            <h2>Enjoying the Eid Delicacies</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2300">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/img18.jpg') }}" alt="pastaweesy" class="post-shadow img-responsive"/>
+                            <h2>Meeting Messi during his Egypt visit</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12" data-aos="fade-up" data-aos-duration="2400">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/img19.jpg') }}" alt="pastaweesy" class="post-shadow img-responsive"/>
+                            <h2>Morning shopping for Sham  El Niseem</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2300">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/img20.jpg') }}" alt="pastaweesy" class="post-shadow img-responsive"/>
+                            <h2>Taking a selfie on the first  day of Eid</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12" data-aos="fade-up" data-aos-duration="2400">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/pastaweesy/img21.jpg') }}" alt="pastaweesy" class="post-shadow img-responsive"/>
+                            <h2>Pastaweesy Lounging by  the poolside</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="pagesData seperators white">
+                <div class="container">
+                    <div class="col-md-12 col-sm-12 col-xs-12 aboutText text-center" data-aos="fade-up">
+                        <p>This journey took Pastaweesy from a single shop, to a chain, to the most followed local eatery</p>
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                            <img src="{{ asset('fe/images/shape2-black.png') }}" alt="shape"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="slide" data-aos="fade-up" data-aos-duration="2200">
+                <img src="{{ asset('fe/images/projects/pastaweesy/slide7.jpg') }}" alt="pastaweesy"/>
+            </div>
+            <div class="slide" data-aos="fade-up" data-aos-duration="2200">
+                <img src="{{ asset('fe/images/projects/pastaweesy/slide8.jpg') }}" alt="pastaweesy"/>
+            </div>
+            <div class="slide" data-aos="fade-up" data-aos-duration="2200">
+                <img src="{{ asset('fe/images/projects/pastaweesy/slide9.jpg') }}" alt="pastaweesy"/>
+            </div>
+            <section class="pagesData pagesEnd">
+                <div class="container">
+                    <div class="col-md-offset-2 col-md-8 col-sm-12 col-xs-12 aboutText text-center da-thumbs" data-aos="fade-up">
+                        <div class="pagesEndText">
+                            <h5>Pastaweesy, one of our oldest and dearest brands, has become a staple of local Egyptian cuisine. After becoming a popular and wide-spread brand in the digital realm, It has become a go to option for thousands of customers
+                                when they desire a meal that brings them back to their cultural roots.</h5>
+                            <img src="{{ asset('fe/images/shape2.png') }}" alt="shape"/>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="col-md-4 col-xs-6 item">
+                                    <a href="{{ path('fe_work_show',{'slug':'coca-cola'}) }}">
+                                        <img src="{{ asset('fe/images/projects/Cocacola.jpg') }}" alt="Cocacola" class="img-responsive"/>
+                                        <div>
+                                            <ul>
+                                                <li><h2>CocaCola</h2></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-xs-6 item">
+                                    <a href="{{ path('fe_work_show',{'slug':'halwani'}) }}">
+                                        <img src="{{ asset('fe/images/projects/halwani2.jpg') }}" alt="halwani" class="img-responsive"/>
+                                        <div>
+                                            <ul>
+                                                <li><h2>Halwani Bros</h2></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 hidden-xs item">
+                                    <a href="{{ path('fe_work_show',{'slug':'royalCeramica'}) }}">
+                                        <img src="{{ asset('fe/images/projects/Royal.jpg') }}" alt="Ceramica Royal" class="img-responsive"/>
+                                        <div>
+                                            <ul>
+                                                <li><h2>Ceramica Royal</h2></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 viewAll">
+                            <a href="{{ path('fe_work') }}">visit other projects</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+{% endblock %}
+{% block javascript %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('fe/js/jquery.hoverdir.js') }}"></script>
+    <script src="{{ asset('fe/js/isInViewport.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('fe/js/greensock.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('fe/js/jquery.bxslider.min.js') }}" type="text/javascript"></script>
+    <script type="text/javascript" src="{{ asset('fe/js/jquery.lazy.min.js') }}"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.lazy').lazy();
+            $('.bxslider').bxSlider({auto: true});
+
+        });
+    </script>
+{% endblock %}

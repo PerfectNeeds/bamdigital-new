@@ -1,0 +1,46 @@
+{#TYPE 1 == NEW#}
+{#TYPE 2 == EDIT#}
+{#TYPE 3 == SEO#}
+{#TYPE 4 == GALLERY#}
+
+<ul class="nav nav-tabs nav-justified">
+    <li {% if type ==1 or type == 2 %} class="active" {% endif %}><a
+                {% if is_granted('ROLE_ADMIN') %}
+            {% if type ==1 or type == 2 %}
+                href="#basic-tab1" data-toggle="tab"
+            {% else %}
+                href="{% if imageSetting %}{{ path(imageSetting.backRoute, {'id' : entity.id}) }}{% else %}{{ path(entityName|lower~'_edit', {'id' : entity.id}) }}{% endif %}"
+            {% endif %}
+        {% else %}
+            disabled='disabled'
+                {% endif %}>
+            <h6><span class="fa fa-info"></span> Basic Information</h6></a></li>
+    <li {% if type ==3 %} class="active" {% endif %}><a
+                {% if is_granted('ROLE_SEO') %}
+            {% if type == 3 %}
+                href="#basic-tab2" data-toggle="tab"
+            {% elseif type == 2 or type == 4 %}
+                href="{{ path('seo_edit',{'baseId':entity.seo.seoBaseRoute.id,'id':entity.id}) }}"
+            {% else %}
+                disabled='disabled'
+            {% endif %}
+        {% else %}
+            disabled='disabled'
+                {% endif %}>
+            <h6><span class="fa fa-link"></span> Seo</h6></a></li>
+    {% if imageSetting and imageSetting.gallery %}
+        <li {% if type ==4 %} class="active" {% endif %}><a
+                    {% if is_granted('ROLE_IMAGE_GALLERY') %}
+                {% if type == 4 %}
+                    href="#basic-tab3" data-toggle="tab"
+                {% elseif type == 2 or type == 3 %}
+                    href="{{ path('post_set_images', { 'id': entity.post.id,'pageType' : imageSetting.id ,'parentId' : entity.id }) }}"
+                {% else %}
+                    disabled='disabled'
+                {% endif %}
+            {% else %}
+                disabled='disabled'
+                    {% endif %}>
+                <h6><span class="fa fa-image"></span> Image Gallery</h6></a></li>
+    {% endif %}
+</ul>

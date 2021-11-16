@@ -1,0 +1,36 @@
+{% set queryParams = app.request.query.all %}
+
+<div class="b-long wow fadeInUp">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <nav>
+                    <ul class="pagination pagination-mod-2">
+                        {% if paginator.prev is defined %}
+                            <li class="pag-prev ">
+                                <a href="{{ path(app.request.attributes.get('_route'),app.request.attributes.get('_route_params')|merge({'page':paginator.prev})|merge(queryParams)) }}" aria-label="Previous">Previous</a>
+                            </li>
+                        {% endif %}
+                        {% if paginator.items is defined %}
+                            {% if paginator.items|length > 1 %}
+                                {% for item in paginator.items %}
+                                    {% if paginator.currentPage == item %}
+                                        <li class="active">
+                                            <a href="#">{{ item }}</li>
+                                    {% else %}
+                                        <li><a href="{{ path(app.request.attributes.get('_route'),app.request.attributes.get('_route_params')|merge({'page':item})|merge(queryParams)) }}">{{item}}</a></li>
+                                    {% endif %}
+                                {% endfor %}
+                            {% endif %}
+                        {% endif %}
+                        {% if paginator.next is defined %}
+                            <li class="pag-next"><a href="{{ path(app.request.attributes.get('_route'),app.request.attributes.get('_route_params')|merge({'page':paginator.next})|merge(queryParams)) }}" aria-label="Next">Next</a>
+                        {% endif %}
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+

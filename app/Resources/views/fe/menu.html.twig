@@ -1,0 +1,11 @@
+<div class="navigation">
+    <div class="menuItems">
+        <ul>
+            <li {% if cr in ['fe_work'] %} class="active" {% endif %}><a href="{{ path('fe_work') }}">Work</a></li>
+            <li {% if cr in ['fe_service'] %} class="active" {% endif %}><a href="{{ path('fe_service') }}">Capabilities</a></li>
+            <li {% if cr in ['fe_about'] %} class="active" {% endif %}><a href="{{ path('fe_about') }}">About</a></li>
+            <li {% if cr in ['fe_client'] %} class="active" {% endif %}><a href="{{ path('fe_client') }}">Clients</a></li>
+            <li {% if cr in ['fe_contact'] %} class="active" {% endif %}><a href="{{ path('fe_contact') }}">Contact</a></li>
+        </ul>
+    </div>
+</div>

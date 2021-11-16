@@ -1,0 +1,45 @@
+{% extends 'fe/base.html.twig' %}
+{% set seo = about.seo %}
+{% use 'SeoBundle:FrontEnd:seo.html.twig' %}
+{% block stylesheet %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+
+    <section class="pagesData aboutContainer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12 text-center clientsHeader">
+                    <h2>THE BAM TEAM</h2>
+                    <img src="{{ asset('fe/images/shape2.png') }}" alt="shape"/>
+                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>-->
+                </div>
+                <div class="col-xs-12 text-center">
+                    <img src="{{ asset('fe/images/team.gif') }}" alt="Team" class="img-responsive img-center"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6 text-center aboutText mb25">
+                    <h3>"Ears wide open, <br>pens and brains into action"</h3>
+                </div>
+                <div class="col-xs-12 aboutText" data-aos="fade-up">
+                    <p>
+                        BAM isn’t just our name it’s what we do. It’s really quite simple; BAM is onomotopiian sound of
+                        a created from an impact or collision. It is never said, but definitely felt. We create ideas
+                        that BAM.
+                        from strategy, social media content, digital knowledge and our creative dream team. We deliver a
+                        fully-fledged digital media agency that brings it all together, and sets itself apart.
+                    </p>
+                    <p>Ears wide open, pens and brains into action, we listen before we create. We dig and crawl into
+                        the deepest need of the market and observe the demographics so we can fully understand what the
+                        missing need is in order to formulate the best possible way into delivering the right brand and
+                        the right messages in the right time. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+{% block javascript %}
+    {{ parent() }}
+{% endblock %}

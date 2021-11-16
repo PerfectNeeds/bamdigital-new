@@ -1,0 +1,12 @@
+{% macro input(formTypeInput,column=6,hint=null,icon=null,class='form-control') %}
+    <div class="col-md-{{ column }}">
+        <div class="form-group">
+            <label> {{ form_label(formTypeInput) }} : </label>
+            {{ form_widget(formTypeInput,{'attr':{'class':class}}) }}
+            <label id="with_icon-error" class="validation-error-label" for="with_icon">{{ form_errors(formTypeInput) }}</label>
+            {% if hint is not null %}
+                <span class="help-block">{{ hint }}</span>
+            {% endif %}
+        </div>
+    </div>
+{% endmacro %}

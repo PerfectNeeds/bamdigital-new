@@ -1,0 +1,70 @@
+{% extends 'adminTemplate/base.html.twig' %}
+{% import 'adminTemplate/macros.html.twig' as macros %}
+{% set page_title %}Edit {{ imageSetting.entityName }} type{% endset %}
+
+{% block breadcrumb %}
+    <div class="breadcrumb-line">
+        <ul class="breadcrumb">
+            <li><a href="{{ path('dashboard') }}"><i class="icon-home2 position-left"></i>Dashboard</a></li>
+            <li><a href="{{ path('imagesetting_index') }}">Image settings</a></li>
+            <li class="active">Edit {{ imageSetting.entityName }}</li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block body %}
+    {{ form_start(edit_form, {'attr':{'class':'form-validate-jquery','novalidate':'novalidate'}}) }}
+    <div class="panel panel-flat">
+        <div class="panel-heading">
+            <h5 class="panel-title">{{ page_title }}</h5>
+        </div>
+
+        <div class="panel-body">
+            {% if is_granted("ROLE_SUPER_ADMIN") %}
+                <div class="row">
+                    {{ macros.input(edit_form.entityName) }}
+                    {{ macros.input(edit_form.backRoute) }}
+                </div>
+                <div class="row">
+                    {{ macros.input(edit_form.uploadPath) }}
+                </div>
+            {% endif %}
+            <div class="row">
+                {{ macros.input(edit_form.quality) }}
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label> {{ form_label(edit_form.autoResize) }} : </label>
+                        {{ form_widget(edit_form.autoResize,{'attr':{'class':'form-control switchery' }}) }}
+                        <label id="with_icon-error" class="validation-error-label" for="with_icon">{{ form_errors(edit_form.autoResize) }}</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label> {{ form_label(edit_form.gallery) }} : </label>
+                        {{ form_widget(edit_form.gallery,{'attr':{'class':'form-control switchery' }}) }}
+                        <label id="with_icon-error" class="validation-error-label" for="with_icon">{{ form_errors(edit_form.gallery) }}</label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="panel-footer">
+            <div class="heading-elements">
+                <div class="heading-btn pull-right">
+                    <button type="reset" class="btn bg-orange-400">Reset</button>
+                    <button type="submit" class="btn bg-teal-400">Save changes <i class="icon-checkmark4 position-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ form_end(edit_form) }}
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('admin/js/plugins/forms/validation/validate.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin/js/pages/form_validation.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin/js/plugins/forms/styling/switchery.min.js') }}"></script>
+
+{% endblock javascripts %}

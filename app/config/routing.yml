@@ -1,0 +1,30 @@
+fos_user:
+    resource: "@UserBundle/Resources/config/all.yml"
+
+work:
+    resource: "@WorkBundle/Controller/FrontEnd"
+    type:     annotation
+    prefix:   /
+
+
+seo_admin:
+    resource: "@SeoBundle/Controller/Administration"
+    type:     annotation
+    prefix:   /admin/seo
+
+cms_admin:
+    resource: "@CMSBundle/Controller/Administration"
+    type:     annotation
+    prefix:   /admin
+
+cms:
+    resource: "@CMSBundle/Controller/FrontEnd"
+    type:     annotation
+    prefix:   /
+
+
+media_admin:
+  resource: "@MediaBundle/Controller/Administration/"
+  type:    annotation
+  prefix: /admin/image-setting
+

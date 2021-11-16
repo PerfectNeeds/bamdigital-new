@@ -1,0 +1,24 @@
+<div class="sidebar sidebar-main sidebar-fixed">
+    <div class="sidebar-content">
+        <!-- Main navigation -->
+        <div class="sidebar-category sidebar-category-visible">
+            <div class="category-content no-padding">
+                <ul class="navigation navigation-main navigation-accordion">
+
+                    <!-- Main -->
+                    <li {% if cr in ['dashboard'] %} class="active" {% endif %}><a href="{{ path('dashboard') }}"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
+                    {% if is_granted('ROLE_ADMIN') %}
+                        <li {% if cr in ['admin_index', 'admin_new', 'admin_edit'] %} class="active" {% endif %}><a href="{{ path('admin_index') }}"><i class="icon-user-tie"></i><span>Administrator</span></a></li>
+                    {% endif %}
+
+
+                    <li {% if cr in ['seopage_index', 'seopage_new', 'seopage_edit'] %} class="active" {% endif %}><a href="{{ path('seopage_index') }}"><i class=" icon-files-empty"></i><span>Seo page</span></a></li>
+                    <!-- /main -->
+
+                </ul>
+            </div>
+        </div>
+        <!-- /main navigation -->
+
+    </div>
+</div>

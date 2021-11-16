@@ -1,0 +1,47 @@
+{% extends 'adminTemplate/base.html.twig' %}
+{% import 'adminTemplate/macros.html.twig' as macros %}
+{% set page_title %}Edit redirect 404{% endset %}
+
+{% block breadcrumb %}
+    <div class="breadcrumb-line">
+        <ul class="breadcrumb">
+            <li><a href="{{ path('dashboard') }}"><i class="icon-home2 position-left"></i>Dashboard</a></li>
+            <li><a href="{{ path('redirect404_index') }}">Redirect 404</a></li>
+            <li class="active">{{ page_title }}</li>
+        </ul>
+
+    </div>
+{% endblock %}
+{% block body %}
+
+    {{ form_start(edit_form, {'attr':{'class':'form-validate-jquery','novalidate':'novalidate'}}) }}
+    <div class="panel panel-flat">
+        <div class="panel-heading">
+            <h5 class="panel-title">{{ page_title }}</h5>
+        </div>
+
+        <div class="panel-body">
+            <div class="row">
+                {{ macros.input(edit_form.from) }}
+                {{ macros.input(edit_form.to) }}
+            </div>
+
+        </div>
+        <div class="panel-footer">
+            <div class="heading-elements">
+                <div class="heading-btn pull-right">
+                    <button type="reset" class="btn bg-orange-400">Reset</button>
+                    <button type="submit" class="btn bg-teal-400">Save changes <i
+                                class="icon-checkmark4 position-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ form_end(edit_form) }}
+
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('admin/js/plugins/forms/validation/validate.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin/js/pages/form_validation.js') }}"></script>
+{% endblock javascripts %}

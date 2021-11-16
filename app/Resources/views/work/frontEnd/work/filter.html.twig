@@ -1,0 +1,78 @@
+{% extends 'fe/base.html.twig' %}
+{% set seo = workPage.seo %}
+{% use 'SeoBundle:FrontEnd:seo.html.twig' %}
+{% block stylesheet %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+    <section class="pagesData ourWork">
+        <div id="da-thumbs" class="da-thumbs">
+            <div class="feature item">
+                <a href="{{ path('fe_work_show',{'slug':'halwani'}) }}">
+                    <img src="{{ asset('fe/images/projects/halwani.jpg') }}" alt="halwani"/>
+                    <div>
+                        <ul>
+                            <li><h2>Halwani Bros</h2></li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="masonry">
+                <div class="item noPadding">
+                    <a href="{{ path('fe_work_show',{'slug':'coca-cola'}) }}">
+                        <img src="{{ asset('fe/images/projects/Cocacola.jpg') }}" alt="Cocacola"/>
+                        <div>
+                            <ul>
+                                <li><h2>CocaCola</h2></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="item noPadding">
+                    <a href="{{ path('fe_work_show',{'slug':'formula-onederful'}) }}">
+                        <img src="{{ asset('fe/images/projects/FormulaOnederful.jpg') }}" alt="Formula Onederful"/>
+                        <div>
+                            <ul>
+                                <li><h2>Formula Onederful</h2></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="item noPadding">
+                    <a href="{{ path('fe_work_show',{'slug':'runway'}) }}">
+                        <img src="{{ asset('fe/images/projects/Runway.jpg') }}" alt="Runway"/>
+                        <div>
+                            <ul>
+                                <li><h2>Runway</h2></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="item noPadding">
+                    <a href="{{ path('fe_work_show',{'slug':'pastaweesy'}) }}">
+                        <img src="{{ asset('fe/images/projects/Pastaweesy.jpg') }}" alt="Pastaweesy"/>
+                        <div>
+                            <ul>
+                                <li><h2>Pastaweesy</h2></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="item noPadding">
+                    <a href="{{ path('fe_work_show',{'slug':'royal-ceramica'}) }}">
+                        <img src="{{ asset('fe/images/projects/Royal.jpg') }}" alt="Royal"/>
+                        <div>
+                            <ul>
+                                <li><h2>Ceramica Royal</h2></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+{% block javascript %}
+    {{ parent() }}
+{% endblock %}

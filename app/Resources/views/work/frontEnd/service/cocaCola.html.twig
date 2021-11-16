@@ -1,0 +1,271 @@
+{% extends 'fe/base.html.twig' %}
+{% set seo = workPage.seo %}
+{% use 'SeoBundle:FrontEnd:seo.html.twig' %}
+{% block stylesheet %}
+    {{ parent() }}
+
+{% endblock %}
+
+{% block content %}
+    <div class="detailsPage">
+        <div id="carousel-example-generic" class="carousel slide caption-animate" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="lazy" data-src="{{ asset('fe/images/projects/cocacola/banner.jpg') }}" alt="slide one">
+                    <div class="carousel-caption fadeInRight">
+                        <h1>Coca-Cola</h1>
+                        <h2>Digital marketing <br/> Integrated Digital Campaigns - Social Media Content </h2>
+                        <p>
+                            Coca Cola’s ‘Special Olympics’ campaign was the closest to BAM’s heart in which we excelled our social media expertise of content creation and production to support the Egyptian participants in the special Olympics. Our excitement was heightened bearing in mind the fact that we are working with an international brand, we couldn’t help but fall in love with each special hero who took part in this journey.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="pagesData seperators first">
+        <div class="container">
+            <div class="col-md-12 col-sm-12 col-xs-12 aboutText text-center" data-aos="fade-up">
+                <p>The real celebrities aren’t just actors on the silver-screen - they’re athletes who go <br/>
+                    past and beyond expectations; we gave our all to prove just that</p>
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                    <img src="{{ asset('fe/images/shape2.png') }}" alt="shape"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ourWorkDetails">
+
+        <div class="slide" data-aos="fade-up" data-aos-duration="2200">
+            <video width="100%" controls>
+                <source src="{{ asset('fe/videos/coca-cola.mp4') }}" type="video/mp4">
+            </video>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 col-xs-12">
+                    <div class="slide cover-photo" data-aos="fade-up" data-aos-duration="2200">
+                        <img class="lazy" data-src="{{ asset('fe/images/projects/cocacola/1.jpg') }}" alt="Coca Cola" class="img-responsive"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-xs-12">
+            <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2200">
+                <div class="side">
+                    <div class="image-center">
+                        <img data-src="{{ asset('fe/images/projects/cocacola/img1.jpg') }}" alt="Coca Cola" class="post-shadow img-responsive lazy"/>
+                        <h2>A selfie that speaks a thousand words with the real heroes of our special olympics in 2017</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-xs-12" data-aos="fade-up" data-aos-duration="2300">
+                <div class="side">
+                    <div class="image-center">
+                        <img data-src="{{ asset('fe/images/projects/cocacola/img2.jpg') }}" alt="Coca Cola" class="post-shadow img-responsive lazy"/>
+                        <h2>There is a different kind of will and persistence within them, that’s what makes them truly special</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2400">
+                <div class="side">
+                    <div class="image-center">
+                        <img data-src="{{ asset('fe/images/projects/cocacola/img3.jpg') }}" alt="Coca Cola" class="post-shadow img-responsive lazy"/>
+                        <h2>A special autograph from a very special champion</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-xs-12" data-aos="fade-up" data-aos-duration="2500">
+                <div class="side">
+                    <div class="image-center">
+                        <img data-src="{{ asset('fe/images/projects/cocacola/img4.jpg') }}" alt="Coca Cola" class="post-shadow img-responsive lazy"/>
+                        <h2>It’s only joyfulness, positivity and unconditional around these champions</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2600">
+                <div class="side">
+                    <div class="image-center text-right">
+                        <img data-src="{{ asset('fe/images/projects/cocacola/img5.jpg') }}" alt="Coca Cola" class="post-shadow img-responsive lazy"/>
+                        <h2>تفاؤلهم و أملهم درس لكل مصر و إصرارهم
+                            درس أكبر للعالم كله</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-xs-12" data-aos="fade-up" data-aos-duration="2700">
+                <div class="side">
+                    <div class="image-center">
+                        <img data-src="{{ asset('fe/images/projects/cocacola/img6.jpg') }}" alt="Coca Cola" class="post-shadow img-responsive lazy"/>
+                        <h2>Quitting and giving up is not in their
+                            dictionary, they teach strength
+                            to the world</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2800">
+                <div class="side">
+                    <div class="image-center text-right">
+                        <img data-src="{{ asset('fe/images/projects/cocacola/img7.jpg') }}" alt="Coca Cola" class="post-shadow img-responsive lazy"/>
+                        <h2>هي دي صورة النجاح ، هي دي صورة البطولة،
+                            هي دي صورة مصر إللي كلنا عايزنها</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-xs-12" data-aos="fade-up" data-aos-duration="2900">
+                <div class="side">
+                    <div class="image-center">
+                        <img data-src="{{ asset('fe/images/projects/cocacola/img8.jpg') }}" alt="Coca Cola" class="post-shadow img-responsive lazy"/>
+                        <h2>The special Olympics team spirit can conquer the world</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="3000">
+                <div class="side">
+                    <div class="image-center">
+                        <img data-src="{{ asset('fe/images/projects/cocacola/img9.jpg') }}" alt="Coca Cola" class="post-shadow img-responsive lazy"/>
+                        <h2>These are the ones we should be seeking autographs from</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="pagesData seperators first white">
+            <div class="container">
+                <div class="col-md-12 col-sm-12 col-xs-12 aboutText text-center" data-aos="fade-up">
+                    <p>Influencers’ engagement with Coca Cola’s special Olympics<br/>
+                        campaign in action</p>
+                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                        <img class="lazy" data-src="{{ asset('fe/images/shape2-black.png') }}" alt="shape"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+                    <div class="slide">
+                        <ul class="bxslider">
+                            <li><img src="images/projects/cocacola/slide5-1.jpg" alt="Coca Cola" /></li>
+                            <li><img src="images/projects/cocacola/slide5-2.jpg" alt="Coca Cola" /></li>
+                            <li><img src="images/projects/cocacola/slide5-3.jpg" alt="Coca Cola" /></li>
+                        </ul>
+                    </div>
+        -->
+        <div class="mobile-slider-container">
+            <div class="slide">
+                <ul class="bxslider">
+                    <li>
+                        <div class="container-fluid">
+                            <div class="mobile-slider">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12 col-md-push-6 row-eq-height">
+                                        <img src="{{ asset('fe/images/projects/cocacola/slide5-1-2.png') }}" alt="Coca Cola" class="img-fluid mobile-img"/>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12 col-md-pull-6 row-eq-height">
+                                        <img src="{{ asset('fe/images/projects/cocacola/slide5-1-1.jpg') }}" alt="Coca Cola" class="img-fluid"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container-fluid">
+                            <div class="mobile-slider">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12 col-md-push-6 row-eq-height">
+                                        <img src="{{ asset('fe/images/projects/cocacola/slide5-2-2.png') }}" alt="Coca Cola" class="img-fluid mobile-img"/>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12 col-md-pull-6 row-eq-height">
+                                        <img src="{{ asset('fe/images/projects/cocacola/slide5-2-1.jpg') }}" alt="Coca Cola" class="img-fluid"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container-fluid">
+                            <div class="mobile-slider">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12 col-md-push-6 row-eq-height">
+                                        <img src="{{ asset('fe/images/projects/cocacola/slide5-3-2.png') }}" alt="Coca Cola" class="img-fluid mobile-img"/>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12 col-md-pull-6 row-eq-height">
+                                        <img src="{{ asset('fe/images/projects/cocacola/slide5-3-1.jpg') }}" alt="Coca Cola" class="img-fluid"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide" data-aos="fade-up" data-aos-duration="2200">
+            <img class="lazy" data-src="{{ asset('fe/images/projects/cocacola/banner3.jpg') }}" alt="Coca Cola"/>
+        </div>
+        <div class="slide" data-aos="fade-up" data-aos-duration="2200">
+            <img class="lazy" data-src="{{ asset('fe/images/projects/cocacola/banner4.jpg') }}" alt="Coca Cola"/>
+        </div>
+        <section class="pagesData pagesEnd">
+            <div class="container">
+                <div class="col-md-offset-2 col-md-8 col-sm-12 col-xs-12 aboutText text-center da-thumbs" data-aos="fade-up">
+                    <div class="pagesEndText">
+                        <h5>This campaign became an unforgettable experience for all those involved<br/>
+                            and will always be especially near and dear to our hearts</h5>
+                        <img src="{{ asset('fe/images/shape2.png') }}" alt="shape"/>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="col-md-4 col-xs-6 item">
+                                <a href="{{ path('fe_work_show',{'slug':'coca-cola'}) }}">
+                                    <img src="{{ asset('fe/images/projects/Cocacola.jpg') }}" alt="Cocacola" class="img-responsive"/>
+                                    <div>
+                                        <ul>
+                                            <li><h2>CocaCola</h2></li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-6 item">
+                                <a href="{{ path('fe_work_show',{'slug':'halwani'}) }}">
+                                    <img src="{{ asset('fe/images/projects/halwani2.jpg') }}" alt="halwani" class="img-responsive"/>
+                                    <div>
+                                        <ul>
+                                            <li><h2>Halwani Bros</h2></li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 hidden-xs item">
+                                <a href="{{ path('fe_work_show',{'slug':'royalCeramica'}) }}">
+                                    <img src="{{ asset('fe/images/projects/Royal.jpg') }}" alt="Ceramica Royal" class="img-responsive"/>
+                                    <div>
+                                        <ul>
+                                            <li><h2>Ceramica Royal</h2></li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 viewAll">
+                        <a href="{{ path('fe_work') }}">visit other projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </section>
+{% endblock %}
+{% block javascript %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('fe/js/jquery.hoverdir.js') }}"></script>
+    <script src="{{ asset('fe/js/isInViewport.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('fe/js/greensock.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('fe/js/jquery.bxslider.min.js') }}" type="text/javascript"></script>
+    <script type="text/javascript" src="{{ asset('fe/js/jquery.lazy.min.js') }}"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.lazy').lazy();
+            $('.bxslider').bxSlider({auto: true});
+
+        });
+    </script>
+{% endblock %}

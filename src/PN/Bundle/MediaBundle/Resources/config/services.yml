@@ -1,0 +1,12 @@
+services:
+
+     upload_image:
+            public: true
+            class:        PN\Bundle\MediaBundle\Service\UploadImageService
+            arguments:    ['@doctrine.orm.default_entity_manager','@router', '@service_container']
+
+     media.twig.extension:
+           class: PN\Bundle\MediaBundle\Twig\Extension\VarsExtension
+           arguments:    ['@doctrine.orm.entity_manager','@service_container']
+           tags:
+               -  { name: twig.extension }

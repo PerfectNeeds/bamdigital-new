@@ -1,0 +1,286 @@
+{% extends 'fe/base.html.twig' %}
+{% set seo = workPage.seo %}
+{% use 'SeoBundle:FrontEnd:seo.html.twig' %}
+{% block stylesheet %}
+    {{ parent() }}
+
+{% endblock %}
+
+{% block content %}
+        <div class="detailsPage">
+            <div id="carousel-example-generic" class="carousel slide caption-animate" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="{{ asset('fe/images/projects/royalceramica/banner.jpg') }}" alt="slide one">
+                        <div class="carousel-caption fadeInRight">
+                            <h1>Royal Ceramica</h1>
+                            <h2>Digital marketing <br/> Integrated Digital Campaigns - Social Media Content </h2>
+                            <p>
+                                Working with one of Egypt’s leading tile brands on a social media level was taking it one step closer towards a digital explosion. Transforming the brand from old and traditional to trendy, beautiful and artistic was cause a successful effort in repositioning the brand in the world of tiles and home décor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="pagesData seperators first">
+            <div class="container">
+                <div class="col-md-12 col-sm-12 col-xs-12 aboutText text-center" data-aos="fade-up">
+                    <p>Transition from traditional to artistic and beautiful, BAM took Royal Ceramica on a creative<br/>
+                        journey of tiles and lifestyle integration content </p>
+                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                        <img src="{{ asset('fe/images/shape2.png') }}" alt="shape"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ourWorkDetails">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 col-xs-12">
+                        <div class="slide cover-photo" data-aos="fade-up" data-aos-duration="2200">
+                            <img src="{{ asset('fe/images/projects/royalceramica/1.jpg') }}" alt="Royal Ceramica" class="img-responsive" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-xs-12">
+                <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2200">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/royalceramica/img1.jpg') }}" alt="Royal Ceramica" class="post-shadow img-responsive"/>
+                            <h2>What you see matters!<br/>اللي بتشوفه هو اللي بيفرق</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12" data-aos="fade-up" data-aos-duration="2300">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/royalceramica/img2.jpg') }}" alt="Royal Ceramica" class="post-shadow img-responsive"/>
+                            <h2>Sophistication at it’s best! Check out our website to view our collection</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2400">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/royalceramica/img3.jpg') }}" alt="Royal Ceramica" class="post-shadow img-responsive"/>
+                            <h2>Create a Ramadan vibe and match your plain ceramics with colorful Ramadan pattern cushions</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12" data-aos="fade-up" data-aos-duration="2500">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/royalceramica/img4.jpg') }}" alt="Royal Ceramica" class="post-shadow img-responsive"/>
+                            <h2>Follow your feelings</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2600">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/royalceramica/img5.jpg') }}" alt="Royal Ceramica" class="post-shadow img-responsive"/>
+                            <h2>Simple is beautiful. Sneak peek of our 2017 collection, stand by!</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12" data-aos="fade-up" data-aos-duration="2700">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/royalceramica/img6.jpg') }}" alt="Royal Ceramica" class="post-shadow img-responsive"/>
+                            <h2>Here’s to elegant, luxurious grey interiors by Royal Ceramica</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2800">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/royalceramica/img7.jpg') }}" alt="Royal Ceramica" class="post-shadow img-responsive"/>
+                            <h2>Pamper your mother on her special day</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="side">
+                        <div class="image-center text-right">
+                            <img src="{{ asset('fe/images/projects/royalceramica/img8.jpg') }}" alt="Royal Ceramica" class="post-shadow img-responsive"/>
+                            <h2>يرجع ارتباط الفانوس بشهر رمضان
+                                من ايام الخليفة الفاطمي حيث كان يخرج إلى الشوارع ليلة الرؤية ليستطلع هلال شهر رمضان وكان الأطفال يخرجون معه ليضيؤوا له الطريق</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/royalceramica/img9.jpg') }}" alt="Royal Ceramica" class="post-shadow img-responsive"/>
+                            <h2>Earthly and subtle, Royal Ceramica will always warm you up</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="pagesData seperators first white">
+                <div class="container">
+                    <div class="col-md-12 col-sm-12 col-xs-12 aboutText text-center" data-aos="fade-up">
+                        <p>Working on an international level in Cersaie media campaign<br/>
+                            to keep up with the foreign markets</p>
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                            <img src="{{ asset('fe/images/shape2-black.png') }}" alt="shape"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 col-xs-12">
+                        <div class="slide cover-photo" data-aos="fade-up" data-aos-duration="2200">
+                            <img src="{{ asset('fe/images/projects/royalceramica/2.jpg') }}" alt="Royal Ceramica" class="img-responsive" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-xs-12">
+                <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2200">
+                    <div class="side">
+                        <img src="{{ asset('fe/images/projects/royalceramica/img2-1.jpg') }}" alt="Royal Ceramica" class="post-shadow img-responsive"/>
+                        <div class="col-md-8 col-md-offset-2 col-xs-12">
+                            <h2>We’re thrilled to show you our 2017
+                                collection at Cersaie in Bologna, Italy
+                                Sep 26th…</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12" data-aos="fade-up" data-aos-duration="2300">
+                    <div class="side">
+                        <img src="{{ asset('fe/images/projects/royalceramica/img2-2.jpg') }}" alt="Royal Ceramica" class="post-shadow img-responsive"/>
+                        <div class="col-md-8 col-md-offset-2 col-xs-12">
+                            <h2>Counting down to the big day at
+                                Cersaie while we showcase our
+                                2017 Collection</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2400">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/royalceramica/img2-3.jpg') }}" alt="Royal Ceramica" class="post-shadow img-responsive"/>
+                            <h2>The launch of our 2017 collection here at Bologna, Italy</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12" data-aos="fade-up" data-aos-duration="2500">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/royalceramica/img2-4.jpg') }}" alt="Royal Ceramica" class="post-shadow img-responsive"/>
+                            <h2>Check out our 2017 collection now up until the 30th of Sep at Cersaie in Bologna, Italy</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2600">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/royalceramica/img2-5.jpg') }}" alt="Royal Ceramica" class="post-shadow img-responsive"/>
+                            <h2>Be the first to learn more about our 2017 collection at Cersaie in Bologna, Italy from today up until the 30th of September</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12" data-aos="fade-up" data-aos-duration="2700">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/royalceramica/img2-6.jpg') }}" alt="Royal Ceramica" class="post-shadow img-responsive"/>
+                            <h2>Be the first to witness our amazing 2017 collection in Bologna, Italy @Cersaie</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="2800">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/royalceramica/img2-7.jpg') }}" alt="Royal Ceramica" class="post-shadow img-responsive"/>
+                            <h2>If you still haven’t checked out our new collection, today is your last chance @Cersaie,Italy</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12" data-aos="fade-up" data-aos-duration="2900">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/royalceramica/img2-8.jpg') }}" alt="Royal Ceramica" class="post-shadow img-responsive"/>
+                            <h2>There’s no better place to showcase our 2017 collection other than Bologna, Italy at Cersaie</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 col-md-offset-1" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="side">
+                        <div class="image-center">
+                            <img src="{{ asset('fe/images/projects/royalceramica/img2-9.jpg') }}" alt="Royal Ceramica" class="post-shadow img-responsive"/>
+                            <h2>Thank you Cersaie we're honored to be there this year and we can't wait till next year...</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="pagesData pagesEnd">
+                <div class="container">
+                    <div class="col-md-offset-2 col-md-8 col-sm-12 col-xs-12 aboutText text-center da-thumbs" data-aos="fade-up">
+                        <div class="pagesEndText">
+                            <h5>This campaign became an unforgettable experience for all those involved<br/>
+                                and will always be especially near and dear to our hearts</h5>
+                            <img src="{{ asset('fe/images/shape2.png') }}" alt="shape"/>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="col-md-4 col-xs-6 item">
+                                    <a href="{{ path('fe_work_show',{'slug':'coca-cola'}) }}">
+                                        <img src="{{ asset('fe/images/projects/Cocacola.jpg') }}" alt="Cocacola" class="img-responsive"/>
+                                        <div>
+                                            <ul>
+                                                <li><h2>CocaCola</h2></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-xs-6 item">
+                                    <a href="{{ path('fe_work_show',{'slug':'halwani'}) }}">
+                                        <img src="{{ asset('fe/images/projects/halwani2.jpg') }}" alt="halwani" class="img-responsive"/>
+                                        <div>
+                                            <ul>
+                                                <li><h2>Halwani Bros</h2></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 hidden-xs item">
+                                    <a href="{{ path('fe_work_show',{'slug':'royalCeramica'}) }}">
+                                        <img src="{{ asset('fe/images/projects/Royal.jpg') }}" alt="Ceramica Royal" class="img-responsive"/>
+                                        <div>
+                                            <ul>
+                                                <li><h2>Ceramica Royal</h2></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 viewAll">
+                            <a href="{{ path('fe_work') }}">visit other projects</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+{% endblock %}
+{% block javascript %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('fe/js/jquery.hoverdir.js') }}"></script>
+    <script src="{{ asset('fe/js/isInViewport.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('fe/js/greensock.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('fe/js/jquery.bxslider.min.js') }}" type="text/javascript"></script>
+    <script type="text/javascript" src="{{ asset('fe/js/jquery.lazy.min.js') }}"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.lazy').lazy();
+            $('.bxslider').bxSlider({auto: true});
+
+        });
+    </script>
+{% endblock %}

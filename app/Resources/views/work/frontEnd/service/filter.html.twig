@@ -1,0 +1,69 @@
+{% extends 'fe/base.html.twig' %}
+{% set seo = servicePage.seo %}
+{% use 'SeoBundle:FrontEnd:seo.html.twig' %}
+{% block stylesheet %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+    <section class="pagesData services">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-xs-12 paddingZero">
+                    <div class="service">
+                        <img src="{{ asset('fe/images/capabilities/digital-strategy.png') }}" alt="Digital Strategy" class="img-responsive"/>
+                        <div>
+                            <h2>Digital Strategy</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12 paddingZero" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2200">
+                    <div class="service">
+                        <img src="{{ asset('fe/images/capabilities/channel-mangement.png') }}" class="img-responsive" alt="Channel mangement"/>
+                        <div>
+                            <h2>Channel mangement</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12 paddingZero" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2600">
+                    <div class="service">
+                        <img src="{{ asset('fe/images/capabilities/content-creation.png') }}" class="img-responsive" alt="Content creation"/>
+                        <div>
+                            <h2>Content creation</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 paddingZero " >
+                    <div class="service">
+                        <img src="{{ asset('fe/images/capabilities/content-production.png') }}" class="img-responsive" alt="Content Production"/>
+                        <div>
+                            <h2>Content Production</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 paddingZero ">
+                    <div class="service">
+                        <img src="{{ asset('fe/images/capabilities/media-buying.png') }}" class="img-responsive" alt="Media Buying"/>
+                        <div>
+                            <h2>Media Buying</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="clients">
+        <div class="container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
+            <div class="col-md-8 col-md-offset-2 col-xs-12 text-center clientsHeader">
+                <h2>IN HOUSE STUDIO</h2>
+                <img src="{{ asset('fe/images/shape2.png') }}" alt="shape"/>
+                <p>They say if you want something done right, do it yourself. And that’s why we have our own in-house photography and videography team that deliver high quality visually appealing content that is customized to the look and feel of each client’s specific needs and look & feel.</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+{% block javascript %}
+    {{ parent() }}
+{% endblock %}

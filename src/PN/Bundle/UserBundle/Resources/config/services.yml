@@ -1,0 +1,5 @@
+services:
+    user:
+        class: PN\Bundle\UserBundle\Services\UserService
+        arguments:
+            - "@security.token_storage"

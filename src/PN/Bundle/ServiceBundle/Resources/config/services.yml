@@ -1,0 +1,10 @@
+services:
+#    assets:
+#        class:        PN\Bundle\ServiceBundle\Service\AssetsService
+#        arguments: ['@service_container']
+#    twig.extension.assets:
+#        class: PN\Bundle\ServiceBundle\Twig\Extension\AssetExtension
+#        public: false
+#        arguments: ['@service_container']
+#        tags:
+#            -  { name: twig.extension }

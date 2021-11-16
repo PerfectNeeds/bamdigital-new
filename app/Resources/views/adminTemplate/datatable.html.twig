@@ -1,0 +1,48 @@
+<script type="text/javascript">
+    $(document).ready(function () {
+        var newOrder=0;
+
+        {% if order is defined  %}
+             newOrder={{ order }};
+        {% endif %}
+        $.extend($.fn.dataTable.defaults, {
+            autoWidth: false,
+            processing: true,
+            serverSide: true,
+            sProcessing: true,
+            fixedHeader: true,
+            pageLength: 100,
+            order: [[newOrder, "desc"]],
+            lengthMenu: [25, 50, 100],
+            dom: '<"datatable-header"flr><"datatable-scroll"t><"datatable-footer"ip>',
+            language: {
+                search: '<span>Filter:</span> _INPUT_',
+                searchPlaceholder: 'Type to filter...',
+                lengthMenu: '<span>Show:</span> _MENU_',
+                paginate: {'first': 'First', 'last': 'Last', 'next': '&rarr;', 'previous': '&larr;'}
+            },
+            drawCallback: function () {
+                $(this).find('tbody tr').slice(-3).find('.dropdown, .btn-group').addClass('dropup');
+            },
+            preDrawCallback: function () {
+                $(this).find('tbody tr').slice(-3).find('.dropdown, .btn-group').removeClass('dropup');
+            }
+        });
+        var table = $('.datatable-ajax').DataTable({
+            ajax: '{{ path }}',
+            fixedHeader: true,
+        });
+
+
+
+        // Adjust table header if sidebar toggler is clicked
+        $('.sidebar-control').on('click', function () {
+            table.fixedHeader.adjust();
+        });
+
+        $('.dataTables_length select').select2({
+            minimumResultsForSearch: Infinity,
+            width: 'auto'
+        });
+    });
+</script>

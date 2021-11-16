@@ -1,0 +1,9 @@
+services:
+    seo:
+        class:        PN\Bundle\SeoBundle\Service\SeoService
+        arguments:    ['@doctrine.orm.default_entity_manager','@router', '@service_container']
+    seo.twig.extension:
+        class: PN\Bundle\SeoBundle\Twig\Extension\VarsExtension
+        arguments: ['@doctrine.orm.entity_manager', '@service_container']
+        tags:
+            -  { name: twig.extension }

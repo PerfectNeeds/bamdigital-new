@@ -1,0 +1,96 @@
+{% extends 'fe/base.html.twig' %}
+{% set seo = homePage.seo %}
+{% use 'SeoBundle:FrontEnd:seo.html.twig' %}
+{% block stylesheet %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+    <div class="home">
+        <div id="carousel-example-generic" class="carousel slide caption-animate" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="{{ asset('fe/images/backgrounds/1.jpg') }}" alt="Pastaweesy">
+                    <div class="carousel-caption fadeInRight">
+                        <h2>With a name as  elightful as its  offerings, </h2>
+                        <p>Pastaweesy is one of BAM’s oldest and dearest clients and from day one we’ve worked to give it the personality to match.</p>
+                        <a href="{{ path('fe_work_show',{'slug':'pastaweesy'}) }}">Pastaweesy</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ asset('fe/images/backgrounds/2.jpg') }}" alt="Halwani">
+                    <div class="carousel-caption fadeInDown">
+                        <h2>Our characters were an instant hit with audiences,</h2>
+                        <p>Throwback to our chicken launch campaign bam.</p>
+                        <a href="{{ path('fe_work_show',{'slug':'halwani'}) }}">Halwani</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ asset('fe/images/backgrounds/3.jpg') }}" alt="Runway">
+                    <div class="carousel-caption fadeInDown">
+                        <h2>Runway’s range kit of  nail polishes delivered to Egypt’s leading fashion influencers</h2>
+                        <p>who reciprocated by posting about the brand on their own pages.</p>
+                        <a href="{{ path('fe_work_show',{'slug':'runway'}) }}">Runway</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ asset('fe/images/backgrounds/4.jpg') }}" alt="MAX Burgers">
+                    <div class="carousel-caption fadeInRight">
+                        <h2>Integration the very best of the Swedish fast-food into the local market,</h2>
+                        <p>created BAM effect amongst burger lovers and enthusiasts with throughout the nation</p>
+                        <a href="#">MAX Burgers</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ asset('fe/images/backgrounds/5.jpg') }}" alt="Formula">
+                    <div class="carousel-caption fadeInDown">
+                        <h2>When Formula Onederful launched its first permanent branch in The hub,</h2>
+                        <p>we invited different social media influencers to the opening by sending them personalized fruit baskets.</p>
+                        <a href="{{ path('fe_work_show',{'slug':'formula-onederful'}) }}">Formula</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ asset('fe/images/backgrounds/6.jpg') }}" alt="Shefaa el Orman">
+                    <div class="carousel-caption fadeInDown">
+                        <h2>Working togather towards a noble cause,</h2>
+                        <p>we gave our courageous servivors the recognition and support they deserve</p>
+                        <a href="#">Shefaa el Orman</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ asset('fe/images/backgrounds/7.jpg') }}" alt="Royal">
+                    <div class="carousel-caption fadeInDown">
+                        <h2>Using pinterest- worthy interior design photography</h2>
+                        <p>we created an aspirational image which elevated the brand above it competition and the category as a whole, further affirming its luxurious and chic image and garnering interest from a more affluent segment of society.</p>
+                        <a href="{{ path('fe_work_show',{'slug':'royal-ceramica'}) }}">Royal</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ asset('fe/images/backgrounds/8.jpg') }}" alt="Cocacola">
+                    <div class="carousel-caption fadeInDown">
+                        <h2>Listening to their stories and seeing their achievements,</h2>
+                        <p>we realized these world class athletes didn't need our sympathy, they deserved our admiration.</p>
+                        <a href="{{ path('fe_work_show',{'slug':'coca-cola'}) }}">Cocacola</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+{% block javascript %}
+    {{ parent() }}
+{% endblock %}
